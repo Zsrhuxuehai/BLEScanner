@@ -30,9 +30,9 @@ jobs:
         run: |
           xcodebuild archive \
             -project BLEScanner.xcodeproj \
-            -scheme ${{ inputs.scheme }} \
+            -scheme "${{ inputs.scheme }}" \
             -sdk iphoneos \
-            -configuration ${{ inputs.configuration }} \
+            -configuration "${{ inputs.configuration }}" \
             -archivePath ./build/BLEScanner.xcarchive \
             CODE_SIGNING_ALLOWED=NO \
             CODE_SIGNING_REQUIRED=NO \
