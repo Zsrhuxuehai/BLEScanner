@@ -38,7 +38,8 @@ jobs:
             CODE_SIGNING_REQUIRED=NO \
             CODE_SIGN_IDENTITY="" \
             DEVELOPMENT_TEAM="" \
-            PRODUCT_BUNDLE_IDENTIFIER=com.blescanner.app
+            PRODUCT_BUNDLE_IDENTIFIER=com.blescanner.app \
+            VALIDATE_PRODUCT=NO
 
       - name: Export IPA
         run: |
