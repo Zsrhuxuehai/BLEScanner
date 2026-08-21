@@ -2,7 +2,15 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-    <key>NSBluetoothAlwaysUsageDescription</key>
+    <key>CFBundleIdentifier</key>
+	<string>com.blescanner.app</string>
+	<key>CFBundleName</key>
+	<string>BLEScanner</string>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>NSBluetoothAlwaysUsageDescription</key>
     <string>需要使用蓝牙来扫描和连接 BLE 设备</string>
     <key>NSBluetoothPeripheralUsageDescription</key>
     <string>需要使用蓝牙来与 BLE 外设通信</string>
