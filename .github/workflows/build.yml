@@ -37,7 +37,7 @@ jobs:
             CODE_SIGNING_ALLOWED=NO \
             CODE_SIGNING_REQUIRED=NO \
             CODE_SIGN_IDENTITY="" \
-            DEVELOPMENT_TEAM="" \
+            DEVELOPMENT_TEAM=ABCDEF1234 \
             PRODUCT_BUNDLE_IDENTIFIER=com.blescanner.app \
             VALIDATE_PRODUCT=NO
 
@@ -47,7 +47,10 @@ jobs:
             -archivePath ./build/BLEScanner.xcarchive \
             -exportPath ./build/ipa \
             -exportOptionsPlist ExportOptions.plist \
-            CODE_SIGNING_ALLOWED=NO
+            CODE_SIGNING_ALLOWED=NO \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGN_IDENTITY="" \
+            DEVELOPMENT_TEAM=ABCDEF1234
 
       - name: Upload IPA
         uses: actions/upload-artifact@v4
